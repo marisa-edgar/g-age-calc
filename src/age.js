@@ -6,5 +6,6 @@ export default class User{
     this.venus= this.age/.62;
     this.mars= this.age/1.88;
     this.jupiter= this.age/11.86;
+    this.expectancy= 72;
   }
 }
