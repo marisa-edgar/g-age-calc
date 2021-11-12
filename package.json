@@ -1,0 +1,19 @@
+{
+  "name": "shape-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "start": "npm run build; webpack-dev-server --open --mode development",
+    "lint": "eslint src/*.js"
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack-dev-server": "3.8.0"
+  }
+}
