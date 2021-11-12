@@ -2,7 +2,7 @@ import { User } from './../src/age.js';
 
 describe('User',()=>{
   test('should correctly create an object for user', () =>{
-    const user1 = new Life("Risa",32);
+    const user1 = new User("Risa",32);
     expect(user1.name).toEqual("Risa");
     expect(user1.age).toEqual(32);
     expect(user1.mercury).toEqual(133.33);
