@@ -39,6 +39,15 @@ describe('User',()=>{
     expect(user1.expectVenus).toEqual(116.12903225806451);
     expect(user1.expectMars).toEqual(38.297872340425535);
     expect(user1.expectJupiter).toEqual(6.070826306913997);
-
+  })
+  test('should correctly return years left on each planet',()=>{
+    const user1 = new User("Risa",32);
+    expect(user1.name).toEqual("Risa");
+    expect(user1.age).toEqual(32);
+    expect(user1.expectancy).toEqual(72);
+    expect(user1.yearsLeftMercury).toEqual(166.666667);
+    expect(user1.yearsLeftVenus).toEqual(64.516129);
+    expect(user1.yearsLeftMars).toEqual(21.2765957);
+    expect(user1.yearsLeftJupiter).toEqual(0.08431703);
   })
 });
