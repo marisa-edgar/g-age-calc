@@ -23,4 +23,11 @@ describe('User',()=>{
     expect(user1.age).toEqual(32);
     expect(user1.expectancy).toEqual(72);
   })
+  test('should correctly return years left',()=>{
+    const user1 = new User("Risa",32);
+    expect(user1.name).toEqual("Risa");
+    expect(user1.age).toEqual(32);
+    expect(user1.expectancy).toEqual(72);
+    expect(user1.yearsLeft).toEqual(40);
+  })
 });
