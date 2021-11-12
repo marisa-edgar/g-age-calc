@@ -12,5 +12,9 @@ export default class User{
     this.expectVenus= this.expectancy/.62;
     this.expectMars= this.expectancy/1.88;
     this.expectJupiter= this.expectancy/11.86;
+    this.yearsLeftMercury= this.expectMercury - this.mercury;
+    this.yearsLeftVenus= this.expectVenus - this.venus;
+    this.yearsLeftMars= this.expectMars - this.mars;
+    this.yearsLeftJupiter= this.expectJupiter - this.jupiter;
   }
 }
