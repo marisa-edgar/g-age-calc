@@ -57,4 +57,15 @@ describe('User',()=>{
     expect(user2.expectancy).toEqual(72);
     expect(user2.overAge).toEqual(8);
   })
+  test('should correctly return years past life expectancy on each planet', ()=>{
+    const user2 =new User("Ester",80)
+    expect(user2.name).toEqual("Ester");
+    expect(user2.age).toEqual(80);
+    expect(user2.expectancy).toEqual(72);
+    expect(user2.overAge).toEqual(8);
+    expect(user2.overAgeMercury).toEqual(33.33333333);
+    expect(user2.overAgeVenus).toEqual(12.9032258);
+    expect(user2.overAgeMars).toEqual(4.25531915);
+    expect(user2.overAgeJupiter).toEqual(0.67453626);
+  })
 });
