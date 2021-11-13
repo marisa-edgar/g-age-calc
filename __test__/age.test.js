@@ -63,9 +63,9 @@ describe('User',()=>{
     expect(user2.age).toEqual(80);
     expect(user2.expectancy).toEqual(72);
     expect(user2.overAge).toEqual(8);
-    expect(user2.overAgeMercury).toEqual(33.33333333);
-    expect(user2.overAgeVenus).toEqual(12.9032258);
-    expect(user2.overAgeMars).toEqual(4.25531915);
-    expect(user2.overAgeJupiter).toEqual(0.67453626);
+    expect(user2.overAgeMercury).toEqual(33.333333333333336);
+    expect(user2.overAgeVenus).toEqual(12.903225806451614);
+    expect(user2.overAgeMars).toEqual(4.25531914893617);
+    expect(user2.overAgeJupiter).toEqual(0.6745362563237775);
   })
 });

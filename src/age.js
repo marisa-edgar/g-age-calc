@@ -17,5 +17,9 @@ export default class User{
     this.yearsLeftMars= this.expectMars - this.mars;
     this.yearsLeftJupiter= this.expectJupiter - this.jupiter;
     this.overAge= this.age - this.expectancy;
+    this.overAgeMercury= this.overAge/.24;
+    this.overAgeVenus= this.overAge/.62;
+    this.overAgeMars= this.overAge/1.88;
+    this.overAgeJupiter= this.overAge/11.86;
   }
 }
