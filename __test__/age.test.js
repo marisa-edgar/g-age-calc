@@ -50,4 +50,11 @@ describe('User',()=>{
     expect(user1.yearsLeftMars).toEqual(21.276595744680854);
     expect(user1.yearsLeftJupiter).toEqual(3.372681281618887);
   })
+  test('should correctly return years past life expectancy', ()=>{
+    const user2 =new User("Ester",80)
+    expect(user2.name).toEqual("Ester");
+    expect(user2.age).toEqual(80);
+    expect(user2.expectancy).toEqual(72);
+    expect(user2.overAge).toEqual(8);
+  })
 });
